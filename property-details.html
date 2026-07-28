@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Beverly Ridge Estate | Elysian Estates</title>
+  <meta name="description" content="View specifications, gallery, floor plan, and schedule a private viewing for The Beverly Ridge Estate." />
+  
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header transparent" data-transparent="true">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        <span class="logo-text">ELYSIAN <span class="text-primary font-light">ESTATES</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="properties.html" class="nav-link active">Properties</a></li>
+          <li><a href="agents.html" class="nav-link">Agents</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon"></span></button>
+        <a href="#schedule" class="btn btn-primary btn-sm trigger-schedule-modal">Schedule Viewing</a>
+        <button class="hamburger" aria-label="Toggle navigation menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Property Hero Banner -->
+  <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1920&q=80'); padding-top: calc(var(--header-height) + 4rem); min-height: 60vh; display: flex; align-items: flex-end;">
+    <div class="container page-banner-content text-left max-w-full" style="width: 100%;">
+      <div class="flex gap-2 mb-3">
+        <span class="badge badge-gold">For Sale</span>
+        <span class="badge badge-glass">Trophy Estate</span>
+      </div>
+      <h1 class="font-heading text-6xl text-white mb-2" id="detail-title">The Beverly Ridge Estate</h1>
+      <p class="text-lg text-white font-light opacity-90 mb-4" id="detail-address">1048 Ridgeview Drive, Beverly Hills, CA 90210</p>
+      <div class="font-heading text-4xl text-primary font-bold" id="detail-price">$18,500,000</div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="overflow-hidden rounded-md cursor-pointer aspect-16-9">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" alt="Exterior View" class="img-cover lightbox-trigger hover-zoom-img" />
+        </div>
+        <div class="overflow-hidden rounded-md cursor-pointer aspect-16-9">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Living Room" class="img-cover lightbox-trigger hover-zoom-img" />
+        </div>
+        <div class="overflow-hidden rounded-md cursor-pointer aspect-16-9">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80" alt="Master Suite" class="img-cover lightbox-trigger hover-zoom-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specs Bar -->
+  <section class="section-sm section-bg-alt">
+    <div class="container">
+      <div class="grid grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="font-heading text-3xl text-primary font-bold">6</div>
+          <div class="text-xs text-heading font-semibold uppercase">Bedrooms</div>
+        </div>
+        <div>
+          <div class="font-heading text-3xl text-primary font-bold">8</div>
+          <div class="text-xs text-heading font-semibold uppercase">Bathrooms</div>
+        </div>
+        <div>
+          <div class="font-heading text-3xl text-primary font-bold">9,800</div>
+          <div class="text-xs text-heading font-semibold uppercase">Square Feet</div>
+        </div>
+        <div>
+          <div class="font-heading text-3xl text-primary font-bold">4</div>
+          <div class="text-xs text-heading font-semibold uppercase">Garage Spaces</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content & Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-3 gap-12">
+        
+        <!-- Main Info (2 cols) -->
+        <div class="col-span-2" style="grid-column: span 2;">
+          <h2 class="section-title">Architectural Overview</h2>
+          <p class="section-desc mb-6">
+            Perched atop Beverly Hills' most prestigious private ridge, this newly constructed architectural tour-de-force establishes a new benchmark for California modern luxury. Designed by renowned architectural firm Studio Nader, the residence harmonizes organic limestone, floor-to-ceiling motorized Fleetwood glass, and warm European oak.
+          </p>
+          <p class="section-desc mb-8">
+            The grand main level flows effortlessly to an expanse of zero-edge pool terrace, framing unobstructed 270-degree sunset vistas extending from downtown Los Angeles to the Pacific Ocean horizon.
+          </p>
+
+          <h3 class="font-heading text-3xl text-heading mb-4">Luxury Amenities</h3>
+          <div class="grid grid-cols-2 gap-4 mb-12">
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B08D57" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="text-sm text-heading font-medium">Infinity Edge Heated Pool & Spa</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B08D57" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="text-sm text-heading font-medium">Temperature Controlled Wine Cellar (1,200 Btls)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B08D57" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="text-sm text-heading font-medium">Dolby Atmos 12-Seat Private Theater</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B08D57" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span class="text-sm text-heading font-medium">Savant Full Home Automation System</span>
+            </div>
+          </div>
+
+          <!-- Mortgage Calculator Widget -->
+          <div class="calc-card mb-12">
+            <h3 class="font-heading text-3xl text-heading mb-2">Mortgage Estimation Calculator</h3>
+            <p class="text-body text-sm mb-6">Estimate your monthly payment schedule for this estate.</p>
+            
+            <form id="mortgage-calc-form">
+              <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="form-group">
+                  <label class="form-label">Property Value ($)</label>
+                  <input type="number" id="calc-home-price" class="form-control" value="18500000" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Down Payment ($)</label>
+                  <input type="number" id="calc-down-payment" class="form-control" value="3700000" />
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="form-group">
+                  <label class="form-label">Interest Rate (%)</label>
+                  <input type="number" id="calc-interest-rate" class="form-control" step="0.1" value="6.5" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Loan Term (Years)</label>
+                  <select id="calc-loan-term" class="form-select">
+                    <option value="30">30 Years Fixed</option>
+                    <option value="15">15 Years Fixed</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
+            <div class="calc-results-box">
+              <div class="text-xs uppercase font-bold text-muted">Estimated Principal & Interest</div>
+              <div class="monthly-payment-amount" id="calc-monthly-result">$93,546</div>
+              <div class="text-xs text-muted">*Taxes, insurance, and HOA dues are subject to property location.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sidebar Contact Agent Card -->
+        <div>
+          <div class="feature-box" style="position: sticky; top: 100px;">
+            <div class="text-center mb-6">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Marcus Vance" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover border-2 border-primary" />
+              <h4 class="font-heading text-2xl text-heading">Marcus Vance</h4>
+              <p class="text-xs text-primary font-bold uppercase tracking-wider">Senior Partner & Luxury Director</p>
+            </div>
+
+            <p class="text-xs text-body mb-6 text-center">Contact Marcus directly for confidential inquiries or off-market access.</p>
+
+            <form class="validate-form mb-4">
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required />
+              </div>
+              <div class="form-group mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required />
+              </div>
+              <div class="form-group mb-4">
+                <input type="tel" class="form-control" placeholder="Your Phone" required />
+              </div>
+              <button type="submit" class="btn btn-primary w-full">Request Tour</button>
+            </form>
+
+            <div class="text-center">
+              <a href="tel:+13108889900" class="text-xs text-primary font-bold">+1 (310) 888-9900</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elysian Estates Luxury Real Estate. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="schedule-viewing-modal">
+    <div class="modal-dialog">
+      <button class="modal-close">&times;</button>
+      <h3 class="font-heading text-3xl text-heading mb-2">Schedule A Private Viewing</h3>
+      <p class="text-body text-sm mb-6">Arranged discreetly with our private client team.</p>
+      <form class="validate-form">
+        <div class="form-group mb-4">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required />
+        </div>
+        <div class="form-group mb-4">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-full">Request Viewing</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="back-to-top">↑</button>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

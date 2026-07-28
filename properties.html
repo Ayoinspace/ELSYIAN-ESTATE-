@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trophy Properties & Estates | Elysian Estates</title>
+  <meta name="description" content="Explore our exclusive collection of luxury properties, beachfront mansions, and sky penthouses." />
+  
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header transparent" data-transparent="true">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        <span class="logo-text">ELYSIAN <span class="text-primary font-light">ESTATES</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="properties.html" class="nav-link active">Properties</a></li>
+          <li><a href="agents.html" class="nav-link">Agents</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon"></span></button>
+        <a href="#schedule" class="btn btn-primary btn-sm trigger-schedule-modal">Schedule Viewing</a>
+        <button class="hamburger" aria-label="Toggle navigation menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container page-banner-content">
+      <h1 class="font-heading text-5xl text-white mb-2">Our Trophy Collection</h1>
+      <p class="text-lg text-white font-light opacity-90">Discover architectural masterpieces in the world's most sought-after enclaves.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Properties</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Listings Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="search-filter-box mb-12">
+        <form class="property-search-form" id="properties-filter-form">
+          <div class="search-grid">
+            <div class="form-group">
+              <label class="form-label" for="filter-location">Location / Region</label>
+              <select class="form-select" id="filter-location" name="location">
+                <option value="">All Regions</option>
+                <option value="beverly-hills">Beverly Hills, CA</option>
+                <option value="malibu">Malibu, CA</option>
+                <option value="bel-air">Bel Air, CA</option>
+                <option value="new-york">New York, NY</option>
+                <option value="aspen">Aspen, CO</option>
+                <option value="miami">Miami Beach, FL</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="filter-type">Property Type</label>
+              <select class="form-select" id="filter-type" name="type">
+                <option value="">All Types</option>
+                <option value="villa">Luxury Villa</option>
+                <option value="waterfront">Waterfront Estate</option>
+                <option value="mansion">Contemporary Manor</option>
+                <option value="penthouse">Sky Penthouse</option>
+                <option value="chalet">Alpine Chalet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="filter-bedrooms">Bedrooms</label>
+              <select class="form-select" id="filter-bedrooms" name="bedrooms">
+                <option value="">Any Bedrooms</option>
+                <option value="4">4+ Bedrooms</option>
+                <option value="5">5+ Bedrooms</option>
+                <option value="6">6+ Bedrooms</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="filter-max-price">Max Price</label>
+              <select class="form-select" id="filter-max-price" name="maxPrice">
+                <option value="">No Limit</option>
+                <option value="20000000">$20,000,000</option>
+                <option value="30000000">$30,000,000</option>
+                <option value="40000000">$40,000,000+</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary w-full">Apply Filters</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Header Results Bar -->
+      <div class="flex justify-between items-center mb-8">
+        <div class="font-heading text-2xl text-heading" id="properties-count">Loading Estates...</div>
+        <div class="flex gap-4 items-center">
+          <span class="text-xs text-muted uppercase font-bold tracking-wider">Sort By:</span>
+          <select class="form-select text-xs" style="width: auto; padding: 0.4rem 1rem;">
+            <option>Price: High to Low</option>
+            <option>Price: Low to High</option>
+            <option>Newest Additions</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Properties Grid -->
+      <div class="grid grid-cols-3 gap-8" id="properties-list-grid">
+        <!-- Rendered dynamically by filter.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elysian Estates Luxury Real Estate. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="schedule-viewing-modal">
+    <div class="modal-dialog">
+      <button class="modal-close">&times;</button>
+      <h3 class="font-heading text-3xl text-heading mb-2">Schedule A Private Viewing</h3>
+      <p class="text-body text-sm mb-6">Arranged discreetly with our private client team.</p>
+      <form class="validate-form">
+        <div class="form-group mb-4">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required />
+        </div>
+        <div class="form-group mb-4">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-full">Request Viewing</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="back-to-top">↑</button>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

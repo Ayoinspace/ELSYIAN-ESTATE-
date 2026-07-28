@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Private Client Desk | Elysian Estates</title>
+  <meta name="description" content="Connect with Elysian Estates' senior leadership for private real estate consultations." />
+  
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header transparent" data-transparent="true">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        <span class="logo-text">ELYSIAN <span class="text-primary font-light">ESTATES</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="properties.html" class="nav-link">Properties</a></li>
+          <li><a href="agents.html" class="nav-link">Agents</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle theme"><span class="theme-icon"></span></button>
+        <a href="#schedule" class="btn btn-primary btn-sm trigger-schedule-modal">Schedule Viewing</a>
+        <button class="hamburger" aria-label="Toggle navigation menu"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
+    <div class="container page-banner-content">
+      <h1 class="font-heading text-5xl text-white mb-2">Connect With Our Senior Partners</h1>
+      <p class="text-lg text-white font-light opacity-90">Confidential advisory for private acquisitions, representations, and estate tours.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-3 gap-12">
+        
+        <!-- Form (2 cols) -->
+        <div class="col-span-2" style="grid-column: span 2;">
+          <h2 class="section-title">Initiate Private Dialogue</h2>
+          <p class="section-desc mb-8">Please complete the form below. All inquiries are strictly confidential and handled directly by our managing partners.</p>
+
+          <form class="validate-form" id="main-contact-page-form">
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Alexandra Sterling" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-control" placeholder="alexandra@domain.com" required />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" placeholder="+1 (310) 888-0000" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Inquiry Interest</label>
+                <select class="form-select">
+                  <option>Acquiring Luxury Property</option>
+                  <option>Selling / Listing Estate</option>
+                  <option>Off-Market Private Vault Access</option>
+                  <option>Family Office Advisory</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group mb-6">
+              <label class="form-label">Confidential Message *</label>
+              <textarea class="form-control" rows="5" placeholder="Specify requirements, preferred region, or estate timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">Submit Confidential Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Info Sidebar -->
+        <div>
+          <div class="feature-box mb-6">
+            <h3 class="font-heading text-2xl text-heading mb-4">Beverly Hills HQ</h3>
+            <p class="text-sm text-body mb-4">
+              100 Wilshire Boulevard, Suite 1800<br />
+              Beverly Hills, CA 90212<br />
+              United States
+            </p>
+            <div class="text-xs text-primary font-bold mb-1">DIRECT ADVISORY DESK:</div>
+            <div class="text-sm text-heading font-semibold mb-4">+1 (310) 888-9900</div>
+            <div class="text-xs text-primary font-bold mb-1">EMAIL:</div>
+            <div class="text-sm text-heading font-semibold">concierge@elysianestates.com</div>
+          </div>
+
+          <div class="feature-box">
+            <h4 class="font-heading text-xl text-heading mb-2">Office Hours</h4>
+            <p class="text-xs text-body mb-1">Monday – Friday: 8:00 AM – 7:00 PM PST</p>
+            <p class="text-xs text-body mb-4">Saturday – Sunday: By Private Appointment</p>
+            <span class="badge badge-gold">24/7 Vault Support Available</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Accordion FAQ -->
+  <section class="section section-bg-alt">
+    <div class="container max-w-4xl">
+      <div class="section-header text-center animate-on-scroll fade-up">
+        <span class="sub-title">Client Information</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="accordion">
+        
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <span>How do I gain access to off-market private vault listings?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content" style="max-height: 200px;">
+            <p class="accordion-text">
+              Off-market properties are shared strictly following proof-of-funds verification and execution of a non-disclosure agreement (NDA) to safeguard buyer and seller privacy.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>Can international buyers acquire property in the United States through Elysian?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <p class="accordion-text">
+              Yes. Our cross-border advisory desk coordinates directly with foreign tax counsel, private banking institutions, and title companies to structure seamless acquisitions for non-US citizens.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>What is required to schedule a private estate viewing?</span>
+            <span class="accordion-icon">▼</span>
+          </button>
+          <div class="accordion-content">
+            <p class="accordion-text">
+              Private tours require 24 to 48 hours notice. For ultra-prime estates above $20M, client verification or real estate counsel confirmation may be requested prior to entry.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Elysian Estates Luxury Real Estate. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="schedule-viewing-modal">
+    <div class="modal-dialog">
+      <button class="modal-close">&times;</button>
+      <h3 class="font-heading text-3xl text-heading mb-2">Schedule A Private Tour</h3>
+      <p class="text-body text-sm mb-6">Arranged discreetly with our private client team.</p>
+      <form class="validate-form">
+        <div class="form-group mb-4">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" required />
+        </div>
+        <div class="form-group mb-4">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-full">Request Tour</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="back-to-top">↑</button>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Elysian Estates - Luxury Real Estate",
+  "description": "Production-ready luxury real estate platform featuring premier estates, property searching and filtering, interactive viewing scheduling, mortgage calculator, agent profiles, and market insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Elysian Estates - Responsive Breakpoints
+   ========================================================================== */
+
+/* Large Desktop (1440px and under) */
+@media (max-width: 1440px) {
+  :root {
+    --container-max-width: 1240px;
+  }
+}
+
+/* Desktop & Laptop (1200px and under) */
+@media (max-width: 1200px) {
+  :root {
+    --container-max-width: 960px;
+    --text-6xl: 3.5rem;
+    --text-5xl: 2.75rem;
+    --text-4xl: 2.25rem;
+  }
+
+  .nav-menu {
+    gap: var(--space-5);
+  }
+}
+
+/* Tablet Landscape & Mobile (992px and under) */
+@media (max-width: 992px) {
+  :root {
+    --container-max-width: 100%;
+    --header-height: 72px;
+    --header-height-scrolled: 64px;
+  }
+
+  /* Hide Schedule Viewing button in top header on mobile to prevent navbar crowding */
+  #schedule-viewing-nav-btn,
+  .nav-actions .trigger-schedule-modal {
+    display: none !important;
+  }
+
+  .nav-actions {
+    gap: var(--space-2);
+  }
+
+  .logo {
+    font-size: var(--text-lg);
+    gap: var(--space-2);
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+    font-size: var(--text-sm);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Mobile Drawer Navigation */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    max-width: 85vw;
+    height: 100vh;
+    background-color: var(--color-surface);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: calc(var(--header-height) + var(--space-6)) var(--space-6) var(--space-8) var(--space-6);
+    box-shadow: var(--shadow-xl);
+    transition: right var(--transition-normal);
+    z-index: var(--z-drawer);
+    gap: 0;
+    overflow-y: auto;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-link {
+    color: var(--color-heading) !important;
+    font-size: var(--text-base);
+    padding: var(--space-4) 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  /* Mobile menu backdrop overlay */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  /* Elevate header & disable header blur when mobile menu is open so nav drawer & links remain sharp & crisp */
+  body.menu-open .header {
+    z-index: calc(var(--z-drawer) + 10) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  body.menu-open .hamburger-line {
+    background-color: var(--color-heading) !important;
+  }
+
+  body.menu-open::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 15, 15, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: calc(var(--z-drawer) - 1);
+  }
+
+  .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .search-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile Portrait & Tablet Small (768px and under) */
+@media (max-width: 768px) {
+  :root {
+    --container-max-width: 540px;
+    --space-20: 3.5rem;
+    --space-16: 2.5rem;
+  }
+
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .search-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .property-price-tag {
+    font-size: var(--text-lg);
+  }
+
+  .modal-dialog {
+    padding: var(--space-6);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-2);
+  }
+}
+
+/* Mobile Small (576px and under) */
+@media (max-width: 576px) {
+  :root {
+    --container-max-width: 100%;
+  }
+
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: var(--text-3xl);
+  }
+
+  .btn {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--text-xs);
+  }
+
+  .property-card-content {
+    padding: var(--space-4);
+  }
+}
+
+/* Ultra Small Screens (375px and under) */
+@media (max-width: 375px) {
+  .logo {
+    font-size: var(--text-xl);
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+}

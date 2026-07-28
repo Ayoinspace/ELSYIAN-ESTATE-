@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Elysian Estates - Design System Variables
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Color Palette - Light Theme */
+  --color-bg: #FAF7F2;
+  --color-surface: #FFFFFF;
+  --color-surface-translucent: rgba(255, 255, 255, 0.85);
+  --color-primary: #B08D57;
+  --color-primary-hover: #8F6B3D;
+  --color-primary-light: rgba(176, 141, 87, 0.12);
+  --color-primary-glow: rgba(176, 141, 87, 0.25);
+  
+  --color-heading: #1F1F1F;
+  --color-body: #666666;
+  --color-body-light: #888888;
+  --color-border: #EAE4DA;
+  --color-border-dark: #D4CBBC;
+  
+  --color-accent-dark: #121212;
+  --color-overlay: rgba(15, 15, 15, 0.55);
+  --color-overlay-heavy: rgba(10, 10, 10, 0.82);
+  
+  --color-success: #2E7D32;
+  --color-error: #C62828;
+
+  /* Dark Theme Palette (Applied via data-theme="dark") */
+  --color-dark-bg: #141414;
+  --color-dark-surface: #1E1E1E;
+  --color-dark-surface-elevated: #282828;
+  --color-dark-heading: #F5F2EC;
+  --color-dark-body: #A0A0A0;
+  --color-dark-border: #2E2E2E;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 2rem;       /* 32px */
+  --text-4xl: 2.5rem;     /* 40px */
+  --text-5xl: 3.25rem;    /* 52px */
+  --text-6xl: 4.25rem;    /* 68px */
+
+  /* Spacing System (8px Grid) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+
+  /* Border Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.15);
+  --shadow-gold: 0 8px 24px rgba(176, 141, 87, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-normal: 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-slow: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+  /* Layout */
+  --container-max-width: 1320px;
+  --header-height: 90px;
+  --header-height-scrolled: 72px;
+
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-elevated: 1;
+  --z-sticky: 100;
+  --z-header: 1000;
+  --z-drawer: 1100;
+  --z-modal: 2000;
+  --z-toast: 3000;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+  --color-bg: var(--color-dark-bg);
+  --color-surface: var(--color-dark-surface);
+  --color-surface-translucent: rgba(30, 30, 30, 0.88);
+  --color-heading: var(--color-dark-heading);
+  --color-body: var(--color-dark-body);
+  --color-body-light: #777777;
+  --color-border: var(--color-dark-border);
+  --color-border-dark: #3E3E3E;
+  
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.5);
+}
